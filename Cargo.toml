@@ -1,0 +1,18 @@
+[package]
+name = "sshc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.19", features = ["derive"] }
+home = "0.5.9"
+tempfile = "3.13.0"
+
+
+[[bin]]
+name = "sshc"
+path = "src/main.rs"
+
+[lib]
+name = "sshc"
+path = "src/lib.rs"
